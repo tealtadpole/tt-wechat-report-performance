@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:if="{{hasMockUserData}}">
+    <view class="avatar-container">
+      <image class="avatar" src="{{mockUserData.results[0].picture.large}}" mode="aspectFit" />
+    </view>
+  </view>
+  <view class="name">{{mockUserData.results[0].name.title}} {{mockUserData.results[0].name.first}} {{mockUserData.results[0].name.last}}</view>
+  <view class="email">{{mockUserData.results[0].email}}</view>
+  <view class="phone">{{mockUserData.results[0].phone}}</view>
+  <view class="btn-refresh-container">
+    <button class="btn-refresh" bindtap="getMockUserData">Refresh data</button>
+  </view>
+  
+</view>

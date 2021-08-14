@@ -1,0 +1,20 @@
+.btn-refresh {
+  background: #008080;
+  color: white;
+  border-radius: 20rpx;
+  position: fixed;
+  bottom: 100rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.avatar {
+  width: 400rpx;
+  height: 400rpx;
+  border-radius: 200rpx;
+}
+.name {
+  font-weight: bold;
+}
+.name, .email, .phone {
+  text-align: center;
+}
